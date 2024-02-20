@@ -3,12 +3,15 @@
 
 // document.querySelector('.set button').addEventListener('click', gotClick);
 
+
 function gotClick(){
-    alert('I got clicked');
-}
+    // alert('I got clicked');
+    let audio = new Audio('sounds/crash.mp3');
+    audio.play();
+
+
 
 // new one
 for (let i = 0; i < document.querySelectorAll('.drum').length; i++){
     document.querySelectorAll('button')[i].addEventListener('click', gotClick);
 }
-
